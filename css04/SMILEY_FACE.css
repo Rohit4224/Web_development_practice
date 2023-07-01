@@ -1,0 +1,38 @@
+#circle{
+    width: 400px;
+    height: 400px;
+    background-color: orange;
+    border-radius: 50%;
+    /* position: relative;
+    left: 400px; */
+}
+
+#smile {
+    width: 200px;
+    height: 75px;
+    background-color: rgb(204, 113, 9);
+    position: relative;
+    top: 200px;
+    left: 100px;
+    border-radius: 0 0 35px 35px;
+}
+
+#lefteye, #righteye {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#lefteye {
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#righteye {
+    position: relative;
+    top: 100px;
+    left: 200px;
+}

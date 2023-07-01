@@ -1,0 +1,49 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border: 3px solid black;
+    margin: 40px;
+    display: inline-block;
+}
+
+#static {
+    background-color: yellow;
+    position: static; 
+    top: 100px;
+    left: 100px; 
+    /* top and left will not work, because position is static */
+    text-align: center;
+}
+
+#relative {
+    /* relative to itself */
+    background-color: red;
+    position: relative;
+    top: 100px;  
+    /* top se 100px */
+    left: 100px;
+    /* left se 100px */
+}
+
+#absolute {
+    /* removed from the normal document flow, no space is created for the element */
+    /* is positioned relative to its closest positioned ancestor */
+    background-color: blue;
+    position: absolute;
+    top: 100px;  
+    /* top se 100px */
+    left: 100px;
+    /* left se 100px */
+}
+
+#fixed {
+    /* removed from the normal document flow, no space is created for the element */
+    /* is positioned realtive to the initial containing block */
+    background-color: darkmagenta;
+    position: fixed;
+    top: 100px;  
+    /* top se 100px */
+    left: 100px;
+    /* left se 100px */
+}

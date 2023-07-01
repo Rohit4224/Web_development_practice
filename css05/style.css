@@ -1,0 +1,28 @@
+#container {
+    height: 600px;
+    width: 80%;
+    background-color: azure;
+    margin: 10px auto;
+    border: 2px solid black;
+    display: flex;
+	/* "display" to start the dlex */
+    flex-direction: row;
+	/* to set the main axis */
+	justify-content: space-evenly;
+	/* justify-content is applied to main axis */
+	flex-wrap: wrap;
+	align-items: flex-end;
+	/* align-items distributes items along the cross axis */
+	align-content: center;
+	/* align-content distributes of space between and around content items along the cross axis */
+	/* align-self > align-items  || alig self to control items*/
+}
+
+h1 {
+    text-align: center;
+}
+
+#container div {
+    height: 100px;
+    width: 200px;
+}
