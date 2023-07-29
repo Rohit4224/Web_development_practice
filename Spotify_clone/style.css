@@ -4,6 +4,7 @@ body {
     margin: 0;
     color : #fff;
     overflow: hidden;
+    padding: 0.5rem 0.5rem;
 }
 
 .main {
@@ -31,6 +32,7 @@ body {
     bottom: 0;
     width: 100%;
     height: 72px;
+    padding-left: 1rem;
 }
 
 a {
@@ -273,4 +275,133 @@ h2 {
     background-color: #1bd760;
     border-radius: 50%;
     margin-top: -0.4rem;
+}
+
+.album {
+    display: flex;
+    align-items: center;
+}
+
+.side-player-foto {
+    height: 3.5rem;
+    border-radius: 0.5rem;
+}
+
+.links-player {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.author-name-link {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.author-name-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.song-name-link:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.heart-button {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.heart-button:hover {
+    opacity: 1;
+}
+
+.picture-in-picture {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.picture-in-picture:hover {
+    opacity: 1.5;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.volume-icon {
+    /* font-size: 24px; */
+    /* margin-right: 10px; */
+    height: 1rem;
+    margin-top: 0.5rem;
+    opacity: 0.7;
+}
+
+.volume-slider {
+    width: 75%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.volume-slider::-webkit-slider-runnable-track {
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.2rem;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -0.4rem;
+}
+
+.slideshow{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.lyrics {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.queue_music {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.devices_other {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.slideshow:hover {
+    opacity: 1;
+}
+
+.lyrics:hover {
+    opacity: 1;
+}
+
+.queue_music:hover {
+    opacity: 1;
+}
+
+.devices_other:hover {
+    opacity: 1;
+}
+
+.volume-icon:hover {
+    opacity: 1;
 }

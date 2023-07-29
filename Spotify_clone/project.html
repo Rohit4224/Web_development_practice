@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Nunito:ital,wght@1,300&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body>
     <div class="main">
@@ -110,7 +111,21 @@
             </div>
         </div>
         <div class="music-player">
-            <div class="album"></div>
+            <div class="album">
+                <div>
+                    <img src="./assets/card2img.jpeg" class="side-player-foto">
+                </div>
+                <div class="links-player">
+                    <a href="" class="song-name-link">Last Friday Night</a>
+                    <a href="" class="author-name-link" >Katy Perry</a>
+                </div>
+                <div class="heart-button">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="picture-in-picture">
+                    <i class="fa-thin fa-images"></i>
+                </div>
+            </div>
             <div class="player">
                 <div class="player-controls">
                     <img src="./assets/player_icon1.png" class="player-control-icon">
@@ -125,7 +140,24 @@
                     <span class="tot-time">04:44</span>
                 </div>
             </div>
-            <div class="controls"></div>
+            <div class="controls">
+                <div class="slideshow">
+                    <span class="material-symbols-outlined">slideshow</span>
+                </div>
+                <div class="lyrics">
+                    <span class="material-symbols-outlined">lyrics</span>
+                </div>
+                <div class="queue_music">
+                    <span class="material-symbols-outlined">queue_music</span>
+                </div>
+                <div class="devices_other">
+                    <span class="material-symbols-outlined">devices_other</span>
+                </div>
+                <div>
+                    <span class="volume-icon" > <i class="fas fa-volume-up"></i> </span>
+                    <input type="range" class="volume-slider" min="0" max="100" value="50">
+                </div>
+            </div>
         </div>
     </div>
 </body>
