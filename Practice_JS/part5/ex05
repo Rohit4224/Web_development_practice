@@ -1,0 +1,8 @@
+
+let randomRange01 = function (start, end) {
+    let diff = (end - start) + 1;
+    let num = Math.floor(Math.random() * diff) + start;
+    return num;
+}
+
+console.log(randomRange01(4, 5));

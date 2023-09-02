@@ -1,0 +1,16 @@
+let country=["Australia","Germany","United States of America"];
+
+function bigName(country)
+{
+    let temp = country[0];
+    let i = 0;
+    while (i < country.length)
+    {
+        if (country[i].length > temp.length)
+            temp = country[i];
+        i++;
+    }
+    return temp
+}
+
+console.log(bigName(country));

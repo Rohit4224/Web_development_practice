@@ -1,0 +1,14 @@
+let str = "avfjbvjfvinfjvnfjoaaiieeoouu45";
+
+function vowelCounter(str)
+{
+    let n = 0;
+    for (char of str)
+    {
+        if (char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u')
+            n++;
+    }
+    return n;
+}
+
+console.log(vowelCounter(str));
