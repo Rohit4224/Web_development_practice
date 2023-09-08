@@ -17,8 +17,8 @@ let colorBxes = document.querySelectorAll('.boxLink')
 for (color of colorBxes)
     color.style.color = 'yellow';
 // console.dir(color[0]);
-
 /* ------------------------------------------------------------------------------------------- */
+
 
 let para = document.createElement("p");
 
