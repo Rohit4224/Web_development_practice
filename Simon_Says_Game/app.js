@@ -31,6 +31,12 @@ function levelUp () {
     setTimeout(function() {
         h2.classList.remove("text_flash");
     }, 150);
+    if (level == 3)
+        h2.innerText = `Level ${level} "BRAVISSIMooo CONTINUA COSI"`;
+    if (level == 5)
+         h2.innerText = `Level ${level} "NON MOLLARE MAI"`;
+    if (level == 8)
+        h2.innerText = `Level ${level} "MAAA... CHE bravoo non ridere"`;
     let color = buttons[randomIdx()];
     console.log("this is color for gameFlash ", color);
     gameSeq.push(color);
