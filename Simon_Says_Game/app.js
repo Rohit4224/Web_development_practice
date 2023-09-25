@@ -32,7 +32,7 @@ function levelUp () {
         h2.classList.remove("text_flash");
     }, 150);
     if (level == 3)
-        h2.innerText = `Level ${level} "BRAVISSIMooo CONTINUA COSI"`;
+        h2.innerText = `Level ${level} "Narendra very goood!!!!"`;
     if (level == 5)
          h2.innerText = `Level ${level} "NON MOLLARE MAI"`;
     if (level == 8)
