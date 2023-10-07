@@ -138,6 +138,7 @@ app.get("/user/add", (req, res) => {
     res.render("adduser.ejs");
 });
 
+
 app.post("/user/added", (req, res) => {
     let { username, email, password } = req.body;
     let Id = getRandomId();
@@ -157,14 +158,44 @@ app.post("/user/added", (req, res) => {
     // res.send("success");
 });
 
-app.delete("/user/:id", (req, res) => {
+app.get("/user/:id/delete", (req, res) => {
     let { id } = req.params;
-    let q = `DELETE FROM USER WHERE Id="${id}"`;
+    /* let q = `SELECT * FROM USER WHERE id='${id}'`;
+    try {
+        connection.query(q, (err, user) => {
+            if(err) throw err;
+            console.log(user);
+            res.render("delete_password.ejs", {user});
+        })
+    } catch (err) {
+        console.log(err);
+        res.send("some error in DB");
+    }; */
+    res.render("delete_password.ejs", {id});
+});
+
+app.delete("/user/delete/:id", (req, res) => {
+    let { id } = req.params;
+    let {password: formPass} = req.body;
+    // let q = `DELETE FROM USER WHERE Id="${id}"`;
+    let q = `SELECT * FROM USER WHERE id='${id}'`;
     try {
         connection.query(q, (err, result) => {
              if(err) throw err;
-            console.log(result);
-            res.redirect("/user");
+             let user = result[0];
+            //  console.log(user.password);
+            //  console.log(formPass);
+             if (formPass != user.password){
+                res.send("Password is incorrect, you cannot hack it.");
+             } else {
+                let q2 = `DELETE FROM USER WHERE Id='${id}'`;
+                connection.query(q2, (err, result) => {
+                    if (err) throw err;
+                    console.log(result);
+                    res.redirect("/user");
+                })
+             }
+            
         })
     } catch (err) {
         console.log(err);

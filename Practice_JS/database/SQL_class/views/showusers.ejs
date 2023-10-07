@@ -29,7 +29,7 @@
                     <button>Edit username</button>
                 </form>
                 </td>
-                <td><form method="POST" action="/user/<%= user.id %>?_method=DELETE">
+                <td><form method="get" action="/user/<%= user.id %>/delete">
                     <button>DELETE</button>
                 </form></td>
         <% } %>
