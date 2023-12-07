@@ -5,7 +5,10 @@ body {
     min-height: 100vh;
 }
 
-
+.container {
+    flex-grow: 1;
+    flex-shrink: 1;
+}
 
 /* navbar */
 .navbar {
@@ -87,4 +90,23 @@ body {
 .card-img-overlay:hover {
     opacity: 0.2;
     background-color: white;
+}
+
+.add-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+}
+
+/* show page */
+.show-img {
+    height: 30vh;
+}
+
+.btns {
+    display: flex;
+}
+
+.show-card {
+    padding-left: 0;
+    padding-right: 0;
 }
